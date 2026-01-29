@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Task Tracker ✅</h1>
+    
+    <!-- Task Form -->
+    <form id="task-form">
+      <label for="title">Task Title:</label>
+      <input type="text" id="title" placeholder="Task title" required>
+      <label for="category">Category:</label>
+      <input type="text" id="category" placeholder="Category (Work/Personal)">
+      <label for="deadline">Deadline:</label>
+      <input type="date" id="deadline">
+      <button type="submit">Add Task</button>
+    </form>
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="Work">Work</button>
+      <button data-filter="Personal">Personal</button>
+      <button data-filter="Completed">Completed</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="task-list"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
